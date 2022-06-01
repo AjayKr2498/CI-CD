@@ -33,7 +33,7 @@ jobs:
       with:
         arguments: build
                 
-     - name: publish to docker hub
+    - name: publish to docker hub
       uses: docker/build-push-action@v1
       with:
         username: ${{ secrets.DOCKER_USERNAME }}
